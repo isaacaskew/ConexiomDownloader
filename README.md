@@ -11,7 +11,7 @@ To configure what you download, the user that's downloading, or the server you'r
 
 #### Changing the server
 
-To change the server you're downloading from (specify a different IP address), edit the `<value>` area in following section:
+To change the server you're downloading from (specify a different IP address), edit the `<value>` area in following section (`name="Host"`):
 ```
 <setting name="Host" serializeAs="String">
     <value>127.0.0.1</value>
@@ -20,7 +20,7 @@ To change the server you're downloading from (specify a different IP address), e
 ###
 #### Changing the username
 
-To change the user you're downloading as, edit the `<value>` area in the following section:
+To change the user you're downloading as, edit the `<value>` area in the following section (`name="Username"`):
 
 ```
 <setting name="Username" serializeAs="String">
@@ -31,7 +31,7 @@ To change the user you're downloading as, edit the `<value>` area in the followi
 
 #### Changing the password
 
-To change the password for the user you're downloading as, edit the `<value>` area in the following section:
+To change the password for the user you're downloading as, edit the `<value>` area in the following section (`name="Password"`):
 
 ```
 <setting name="Password" serializeAs="String">
@@ -43,7 +43,7 @@ Note that in the above example, instead of `&` we use the encoded value of `&amp
 ###
 #### Changing where the files download
 
-To specify where on your computer you want the files on the server to download, edit the `<value>` area in the following section:
+To specify where on your computer you want the files on the server to download, edit the `<value>` area in the following section (`name="DownloadDir"`):
 
 ```
 <setting name="DownloadDir" serializeAs="String">
@@ -55,7 +55,7 @@ With this setting, all files found when the connection is established will be do
 ###
 #### Changing where the files download
 
-To specify where on your computer you want the files on the server to download, edit the `<value>` area in the following section:
+To specify where on your computer you want the files on the server to download, edit the `<value>` area in the following section (`name="SftpDir"`):
 
 ```
 <setting name="SftpDir" serializeAs="String">
@@ -67,7 +67,7 @@ With the setting above, after you connect to the IP provided with the username a
 ###
 #### Deleting files from the server 
 
-You can edit the `<value>` area in the following section to `True` or `False` (case-sensitive). If `True`, files that you download will be deleted from the server after the download completes.
+You can edit the `<value>` area in the following section to `True` or `False` (case-sensitive). If `True`, files that you download will be deleted from the server after the download completes (`name="DeleteAfterDownload"`).
 
 ```
 <setting name="DeleteAfterDownload" serializeAs="String">
